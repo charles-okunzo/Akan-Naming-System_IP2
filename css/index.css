@@ -12,3 +12,15 @@ body{
 span{
   color: yellow;
 }
+
+.lets-go{
+  transition: all 1s ease-in-out;
+}
+
+.lets-go:hover{
+  color: black !important;
+}
+
+.lets-go i{
+  font-size: 1.2rem;
+}
