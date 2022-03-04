@@ -23,10 +23,14 @@ span{
 
 i.fa-arrow-right{
   font-size: 1.3rem;
-  animation: zoomOut 2s infinite ease-in-out forwards;
+  /* animation: zoomOut 2s infinite ease-in-out forwards; */
 }
 
 a{
   text-decoration: none;
   color: #fff;
+}
+
+.fa-solid:hover, .fa-brands:hover{
+  color: #FFC22F;
 }
