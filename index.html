@@ -22,23 +22,52 @@
     <!-- header starts here -->
     <div class="row">
       <div class="col">
-        <p class="h1"><span>Akan</span> Naming</p>
+        <p class="h1 pt-2"><span>Akan</span> Naming</p>
       </div>
     </div>
     <!-- header ends here -->
 
     <!-- burner starts here -->
-    <div class="row justify-content-center">
+    <div class="row justify-content-center d-none">
       <div class="col-12">
       <p class="h2 text-center intro">WELCOME TO AKAN NAMES WEBSITE</p>
       </div>
       <div class="col-md-6 text-center py-5">
         <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Curious to know your Akan Name?</p> 
-        <p class="pt-4"><button class="btn btn-outline-warning text-white lets-go">LET'S GO <i class="fas fa-arrow-right"></i></button></p>
+        <p class="pt-4"><button type="submit" class="btn btn-outline-warning text-white lets-go">LET'S GO <i class="fas fa-arrow-right"></i></button></p>
       </div>
     </div>
     <!-- burner ends here -->
 
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <form name="form">
+          <fieldset>
+            <legend class="text-center">Akan Name Generator</legend>
+            <div class="form-text">Fill the fields below to generate your Akan Name</div>
+
+            <div>
+              <label>Select Gender</label>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="gender" id="genderMale" value="male">
+                <label for="genderMale" class="form-check-label"> Male</label>
+              </div>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" name="gender" id="genderFemale" value="female">
+              <label for="genderFemale" class="form-check-label"> Female</label>
+            </div>
+
+            <div class="mt-4">
+              <input type="date" class="form-control" name="birthDay" id="birthDay">
+              <label for="birthDay" class="form-label">Enter Birthday</label>
+            </div>
+
+            <button type="submit" class="btn btn-outline-warning text-white lets-go">SUBMIT <i class="fas fa-arrow-right"></i></button>
+          </fieldset>
+        </form>
+      </div> 
+    </div>
 
     <!-- footer row starts here -->
     <footer class="row">
