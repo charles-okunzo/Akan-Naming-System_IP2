@@ -1,6 +1,7 @@
 *{
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
+  color: rgba(255, 255, 255, 0.9);
 }
 .bg-shade{
   background-color :rgba(0, 0, 0, 0.7);
@@ -41,10 +42,34 @@ a{
 }
 
 button{
-  animation: blink 2s infinite ease-in;
+  animation: blink 2s infinite alternate ease-in;
 }
 
 @keyframes blink{
   from{border-color: #FFC22F;}
   to{border-color: transparent;}
+}
+
+.intro{
+  animation: fadeInDown 2s;
+  position: relative;
+}
+
+p.intro::before{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 10%;
+  background-color: #fff;
+  transform: translate(-115px,20px);
+
+}
+
+p.intro::after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 10%;
+  background-color: #fff;
+  transform: translate(0px,20px);
 }
