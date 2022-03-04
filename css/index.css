@@ -81,3 +81,29 @@ p.intro::after{
   border-style: none;
   border-bottom: 2px solid #fff;
 }
+
+form{
+  position: relative;
+}
+
+/* form::before{
+  content: "";
+  height: 150px;
+  width: 150px;
+  border-top: 2px solid #FFC22F;
+  border-left: 2px solid #FFC22F;
+  position: absolute;
+  transform: translate(-20%, -10%);
+}
+
+form::after{
+  content: "";
+  height: 150px;
+  width: 150px;
+  border-bottom: 2px solid #FFC22F;
+  border-right: 2px solid #FFC22F;
+  position: absolute;
+  transform: translate(20%, 10%);
+  bottom: 0;
+  right: 0;
+} */
