@@ -44,10 +44,10 @@
         <form name="form">
           <fieldset>
             <legend class="text-center">Akan Name Generator</legend>
-            <div class="form-text">Fill the fields below to generate your Akan Name</div>
+            <div class="form-text text-warning">Fill the fields below to generate your Akan Name</div>
 
             <div>
-              <label>Select Gender</label>
+              <label>Select Gender<span class="text-danger">*</span></label>
               <div class="form-check">
                 <input type="radio" class="form-check-input" name="gender" id="genderMale" value="male">
                 <label for="genderMale" class="form-check-label"> Male</label>
@@ -60,10 +60,10 @@
 
             <div class="mt-4">
               <input type="date" class="form-control" name="birthDay" id="birthDay">
-              <label for="birthDay" class="form-label">Enter Birthday</label>
+              <label for="birthDay" class="form-label py-2">Enter Birthday<span class="text-danger">*</span></label>
             </div>
 
-            <button type="submit" class="btn btn-outline-warning text-white lets-go">SUBMIT <i class="fas fa-arrow-right"></i></button>
+            <button type="submit" class="btn btn-outline-warning text-white lets-go mt-4">SUBMIT <i class="fas fa-arrow-right"></i></button>
           </fieldset>
         </form>
       </div> 

@@ -22,9 +22,10 @@ span{
   transition: all 1s ease-in-out;
 }
 
-.lets-go:hover{
+button.lets-go:hover{
   color: black !important;
 }
+
 
 i.fa-arrow-right{
   font-size: 1.3rem;
@@ -72,4 +73,11 @@ p.intro::after{
   width: 10%;
   background-color: #fff;
   transform: translate(0px,20px);
+}
+
+#birthDay{
+  background-color: transparent;
+  color: #fff;
+  border-style: none;
+  border-bottom: 2px solid #fff;
 }
