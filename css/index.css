@@ -1,3 +1,7 @@
+*{
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
 .bg-shade{
   background-color :rgba(0, 0, 0, 0.7);
   height: 100vh;
@@ -33,4 +37,14 @@ a{
 
 .fa-solid:hover, .fa-brands:hover{
   color: #FFC22F;
+  font-size: 1.5rem;
+}
+
+button{
+  animation: blink 2s infinite ease-in;
+}
+
+@keyframes blink{
+  from{border-color: #FFC22F;}
+  to{border-color: transparent;}
 }
