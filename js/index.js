@@ -66,6 +66,7 @@ submitBtn.addEventListener("click", (e)=>{
   '<a href="https://en.wikipedia.org/wiki/Afua" target="_blank" class="text-warning" title="See Meaning">Afua</a>',
   '<a href="https://en.wikipedia.org/wiki/Ama_(given_name)" target="_blank" class="text-warning" title="See Meaning">Ama</a>'];
 
+  //control flow
   if(gender===""){
     alert("Err:Select Your Gender!")
   }else if(birthDay===""){
