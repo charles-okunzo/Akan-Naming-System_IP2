@@ -8,6 +8,11 @@
   background-color :rgba(0, 0, 0, 0.7);
   height: 100vh;
 }
+
+.logo{
+  height: 3.5rem;
+}
+
 body{
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,6 +20,11 @@ body{
   width: 100%;
   
 }
+
+.brand{
+  font-family: 'Pacifico', cursive;
+}
+
 span{
   color: yellow;
 }
@@ -76,11 +86,14 @@ p.intro::after{
   transform: translate(0px,20px);
 }
 
-#birthDay{
-  background-color: transparent;
+input#birthDay{
+  background-color: rgba(255, 255, 255, 0.2);
   color: #fff;
   border-style: none;
   border-bottom: 2px solid #fff;
+}
+input{
+  cursor: pointer;
 }
 
 form{
@@ -109,7 +122,7 @@ form{
   overflow: hidden; 
   white-space: nowrap;
   border-right: 2px solid #fff;
-  animation: typeOut 2s steps(10, end) 3s forwards, cursor 0.5s steps(15,end) infinite alternate;
+  animation: typeOut 1s steps(10, end) 3s forwards, cursor 0.5s steps(15,end) infinite alternate;
   width: 0%; 
 } 
 
@@ -123,6 +136,11 @@ form{
   to{border-color: #fff;}
 }
 
+@media only screen and (max-width:768px){
+  p.intro::before, p.intro::after{
+    display: none;
+  }
+}
 
 
 
