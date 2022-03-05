@@ -2,6 +2,7 @@
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
   color: rgba(255, 255, 255, 0.9);
+  user-select: none;
 }
 .bg-shade{
   background-color :rgba(0, 0, 0, 0.7);

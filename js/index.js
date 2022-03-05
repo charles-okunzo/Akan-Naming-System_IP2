@@ -10,6 +10,8 @@ const goBtn=document.getElementById("goBtn");
 
 const submitBtn= document.getElementById("submitBtn");
 
+const goBack= document.getElementById("goBack");
+
 homeBtn.onclick=()=>{
   welcome.style.display="flex";
   myForm.style.display="none";
@@ -19,6 +21,12 @@ homeBtn.onclick=()=>{
 goBtn.onclick=()=>{
   welcome.style.display="none";
   myForm.style.display="flex";
+};
+
+goBack.onclick= ()=>{
+  welcome.style.display="none";
+  myForm.style.display="flex";
+  myOutput.style.display="none";
 };
 
 submitBtn.addEventListener("click", (e)=>{
