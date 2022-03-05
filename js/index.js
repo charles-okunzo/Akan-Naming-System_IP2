@@ -59,7 +59,7 @@ submitBtn.addEventListener("click", (e)=>{
 
   //Array of female Akan names
   const femaleAkanNames=['<a href="https://en.wikipedia.org/wiki/Akosua" class="text-warning" target="_blank" title="See Meaning">Akosua</a>',
-  '<a href="https://en.wikipedia.org/wiki/Adwoa" class="text-warning" title="See Meaning">Adwoa"</a>',
+  '<a href="https://en.wikipedia.org/wiki/Adwoa" class="text-warning" title="See Meaning">Adwoa</a>',
   '<a href="https://en.wikipedia.org/wiki/Abena" target="_blank" class="text-warning" title="See Meaning">Abena</a>',
   '<a href="https://en.wikipedia.org/wiki/Akua" target="_blank" class="text-warning" title="See Meaning">Akua</a>',
   '<a href="https://en.wikipedia.org/wiki/Yaa_(name)" target="_blank" class="text-warning" title="See Meaning">Yaa</a>',
