@@ -21,6 +21,8 @@ homeBtn.onclick=()=>{
 goBtn.onclick=()=>{
   welcome.style.display="none";
   myForm.style.display="flex";
+
+  myForm.classList.add("changeSmooth");
 };
 
 goBack.onclick= ()=>{
@@ -35,4 +37,6 @@ submitBtn.addEventListener("click", (e)=>{
   myOutput.style.display="flex";
   welcome.style.display="none";
   myForm.style.display="none";
+
+  myOutput.classList.add("changeSmooth");
 })

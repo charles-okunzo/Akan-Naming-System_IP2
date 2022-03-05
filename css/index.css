@@ -96,6 +96,10 @@ form{
   display: none;
 }
 
+.changeSmooth{
+  animation: fadeIn 2s ease-in forwards;
+}
+
 
 
 
