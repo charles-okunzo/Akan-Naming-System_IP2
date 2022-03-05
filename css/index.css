@@ -97,9 +97,31 @@ form{
 }
 
 .changeSmooth{
-  animation: fadeIn 2s ease-in forwards;
+  animation: fadeIn 1s ease-in forwards;
 }
 
+.type-area{
+  display: inline-block;
+}
+
+.type-animation{
+  color: yellow;
+  overflow: hidden; 
+  white-space: nowrap;
+  border-right: 2px solid #fff;
+  animation: typeOut 2s steps(15, end) 3s forwards, cursor 0.5s steps(15,end) infinite alternate;
+  width: 0%; 
+} 
+
+@keyframes typeOut{
+  from{width: 0%;}
+  to{width: 100%; }
+}
+
+@keyframes cursor{
+  from{border-color: transparent;}
+  to{border-color: #fff;}
+}
 
 
 

@@ -12,24 +12,29 @@ const submitBtn= document.getElementById("submitBtn");
 
 const goBack= document.getElementById("goBack");
 
-homeBtn.onclick=()=>{
+const akanNAme= document.getElementById("displayAkanName");
+
+homeBtn.addEventListener("click", (e)=>{
+  e.preventDefault();
   welcome.style.display="flex";
   myForm.style.display="none";
   myOutput.style.display="none";
-};
+})
 
-goBtn.onclick=()=>{
+goBtn.addEventListener("click", (e)=>{
+  e.preventDefault();
   welcome.style.display="none";
   myForm.style.display="flex";
 
   myForm.classList.add("changeSmooth");
-};
+})
 
-goBack.onclick= ()=>{
+goBack.addEventListener("click", (e)=>{
+  e.preventDefault();
   welcome.style.display="none";
   myForm.style.display="flex";
   myOutput.style.display="none";
-};
+})
 
 submitBtn.addEventListener("click", (e)=>{
   e.preventDefault();
@@ -37,6 +42,8 @@ submitBtn.addEventListener("click", (e)=>{
   myOutput.style.display="flex";
   welcome.style.display="none";
   myForm.style.display="none";
+
+  akanNAme.classList.add("type-animation");
 
   myOutput.classList.add("changeSmooth");
 })
