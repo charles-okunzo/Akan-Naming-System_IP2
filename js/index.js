@@ -39,11 +39,45 @@ goBack.addEventListener("click", (e)=>{
 submitBtn.addEventListener("click", (e)=>{
   e.preventDefault();
 
-  myOutput.style.display="flex";
-  welcome.style.display="none";
-  myForm.style.display="none";
 
-  akanNAme.classList.add("type-animation");
+  let gender= document.form.gender.value;
 
-  myOutput.classList.add("changeSmooth");
+  let birthDay= document.getElementById("birthDay").value;
+
+  let birthDayDate= new Date(birthDay);
+  
+  let myDay=birthDayDate.getDay();
+
+  const maleAkanNames=["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+
+  const femaleAkanNames=["Akosua", "Adwoa", "Abenaa", "Akua", " Yaa", "Afua", "Ama"];
+
+  if(gender===""){
+    alert("Err:Select Your Gender!")
+  }else if(birthDay===""){
+    alert("Err:Enter Your Birthday!")
+  }else{
+    if(gender==="male"){
+      akanNAme.textContent= maleAkanNames[myDay]
+    }else{
+      akanNAme.textContent= femaleAkanNames[myDay];
+    }
+    myOutput.style.display="flex";
+    welcome.style.display="none";
+    myForm.style.display="none";
+
+    akanNAme.classList.add("type-animation");
+
+    myOutput.classList.add("changeSmooth");
+  }
+
+ 
 })
+
+// const evaluateOutput= (gender,birthDay)=>{
+  
+  
+
+//   // gender===""? alert("Select Your Gender!"):birthDay===""?alert("Enter Your Birthday"):gender==="male"?akanNAme.textContent= maleAkanNames[myDay]:akanNAme.textContent= femaleAkanNames[myDay];
+
+// };

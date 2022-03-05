@@ -97,7 +97,7 @@ form{
 }
 
 .changeSmooth{
-  animation: fadeIn 1s ease-in forwards;
+  animation: fadeIn 1.5s ease-in-out forwards;
 }
 
 .type-area{
@@ -109,7 +109,7 @@ form{
   overflow: hidden; 
   white-space: nowrap;
   border-right: 2px solid #fff;
-  animation: typeOut 2s steps(15, end) 3s forwards, cursor 0.5s steps(15,end) infinite alternate;
+  animation: typeOut 2s steps(10, end) 3s forwards, cursor 0.5s steps(15,end) infinite alternate;
   width: 0%; 
 } 
 
