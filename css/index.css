@@ -86,6 +86,31 @@ form{
   position: relative;
 }
 
+#myForm{
+  display: none;
+  user-select: none;
+}
+
+#myResult{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* form::before{
   content: "";
   height: 150px;

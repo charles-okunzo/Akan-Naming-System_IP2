@@ -21,11 +21,11 @@
   <div class="container vh-100 flex-column d-flex justify-content-between">
     <!-- header starts here -->
     <div class="row">
-      <div class="col">
+      <div class="col-8">
         <p class="h1 pt-2"><span>Akan</span> Naming</p>
       </div>
 
-      <div class="col">
+      <div class="col-4">
         <button class="btn btn-outline-warning lets-go text-white" id="home">Home</button>
       </div>
     </div>
@@ -38,14 +38,14 @@
       </div>
       <div class="col-md-6 text-center py-5">
         <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Curious to know your Akan Name?</p> 
-        <p class="pt-4"><button type="submit" class="btn btn-outline-warning text-white lets-go">LET'S GO <i class="fas fa-arrow-right"></i></button></p>
+        <p class="pt-4"><button type="submit" class="btn btn-outline-warning text-white lets-go" id="goBtn">LET'S GO <i class="fas fa-arrow-right"></i></button></p>
       </div>
     </div>
     <!-- burner ends here -->
 
     <!-- form starts here -->
 
-    <div class="row justify-content-center d-none" id="myForm">
+    <div class="row justify-content-center" id="myForm">
       <div class="col-md-4 col-sm-8">
         <form name="form">
           <fieldset>
@@ -77,7 +77,7 @@
 
     <!-- output div starts here -->
 
-    <div class="row justify-content-center d-none" id="myResult">
+    <div class="row justify-content-center" id="myResult">
       <div class="col-md-4">
         <img src="./assets/african-dance.gif" class="img-fluid" alt="african-dance">
         <p class="h2 text-center mt-3">Hurray!!! <br> Your Akan Name is <br> <span id="displayAkanName" class="text-decoration-underline">my name</span> </p>
