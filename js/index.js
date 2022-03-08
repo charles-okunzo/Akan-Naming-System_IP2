@@ -48,6 +48,8 @@ submitBtn.addEventListener("click", (e)=>{
   let birthDayDate= new Date(birthDay);
   
   let myDay=birthDayDate.getDay();
+
+  let currentDate= new Date();
 //Array of male Akan names
   const maleAkanNames=['<a href="https://en.wikipedia.org/wiki/Kwasi" class="text-warning" target="_blank" title="See Meaning">Kwasi</a>', 
   '<a href="https://en.wikipedia.org/wiki/Kwadwo" target="_blank" class="text-warning" title="See Meaning">Kwadwo</a>', 
@@ -71,6 +73,8 @@ submitBtn.addEventListener("click", (e)=>{
     alert("Err:Select Your Gender!")
   }else if(birthDay===""){
     alert("Err:Enter Your Birthday!")
+  }else if(birthDayDate>currentDate){
+    alert("Err:Enter a Valid Date!")
   }else{
     if(gender==="male"){
       akanNAme.innerHTML= maleAkanNames[myDay]
